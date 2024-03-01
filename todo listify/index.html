@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="index.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- title container starts -->
+    <div class="title-container">
+      <img src="logo.png" alt="logo image" id="logo" />
+      <h3 class="title">Manage Your <span>Todo</span></h3>
+    </div>
+    <!-- title constainer ends -->
+
+    <!-- Login section starts -->
+    <div class="login-section">
+      <img src="login-img.png" alt="login image" class="login-img" />
+      <form action="todo.html" class="log-form">
+        <input
+          class="log-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Username"
+        />
+        <input
+          class="log-input"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+
+        <button type="submit" class="login-btn">Login</button>
+        <a class="form-links" id="forgot-pass" href="#">Forgot password?</a>
+        <a class="form-links" id="new-user" href="#">New User?</a>
+      </form>
+    </div>
+    <!-- Login section ends -->
+    <noscript>Your browser doesn't support JavaScript</noscript>
+  </body>
+</html>

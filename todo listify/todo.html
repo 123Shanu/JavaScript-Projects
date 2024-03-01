@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+        <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+
+    <link rel="stylesheet" href="todo.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- No of tasks count -->
+    <div class="task-details">
+      <p>No of tasks to do : <span id="noOfTasks">0</span></p>
+    </div>
+
+    <!-- main content starts here -->
+    <main>
+      <!-- task input starts here -->
+      <div class="input-container">
+        <input
+          type="text"
+          id="input-todo"
+          placeholder="Your  task todo..."
+          maxlength="50"
+        />
+        <button id="date-btn">select date</button>
+        <button id="add-btn">&plus;</button>
+      </div>
+      <!-- task input ends here -->
+
+      <!-- lists item container starts here -->
+      <div class="lists">
+        <!-- sample test list item -->
+        <!-- <li class="details">
+          <p class="task">play and study on monday sunday tuesday</p>
+          <span class="target-date">01/02/2024</span>
+          <span><button class="close-btn">&times;</button></span>
+        </li> -->
+
+        <!-- overlay date -->
+        <div class="overlay-date hidden">
+          <p>Select target date</p>
+          <input type="date" name="date" id="date" />
+        </div>
+      </div>
+      <!-- lists item container ends here -->
+
+      <!-- log out button-->
+      <button id="logout"><a href="index.html">Logout</a></button>
+    </main>
+    <!-- main content ends here -->
+  </body>
+</html>
