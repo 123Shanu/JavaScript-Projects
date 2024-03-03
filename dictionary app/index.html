@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/icon" href="images/icon.png" />
+    <script src="script.js" defer></script>
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <!-- header section starts here -->
+    <header>
+      <img src="images/logo.png" alt="logo" id="logo" />
+      <h1 id="head-title">Get The Word Summary</h1>
+      <!-- <p id="head-desc">word finder</p> -->
+    </header>
+    <!-- header section ends here -->
+    <!-- --------------------------------------------------------- -->
+    <!-- main content starts here -->
+    <main>
+      <!-- error div starts -->
+      <div id="error-div" class="hidden">
+        <p id="close-error">&times;</p>
+        <span id="error-title">Error:</span><span id="error-msg"></span>
+      </div>
+      <!-- error div ends -->
+      <div class="word-container">
+        <h2 id="word1">find word description here...</h2>
+        <input
+          id="user-input"
+          type="text"
+          placeholder="Enter a word"
+          id="userInput"
+        />
+        <button id="get-button">Get Description</button>
+      </div>
+      <div class="description-container">
+        <div class="des-items" id="des-word-container">
+          <h2 class="des-items-title" id="des-word-head">Searched Word</h2>
+          <p class="des-items-content" id="des-word"></p>
+        </div>
+        <div class="des-items" id="des-meaning-container">
+          <h2 class="des-items-title" id="des-meaning-head">Meaning</h2>
+          <p class="des-items-content" id="des-meaning"></p>
+        </div>
+
+        <div class="des-items" id="des-phonetic-container">
+          <h2 class="des-items-title" id="des-phonetic-head">Phonetic</h2>
+          <p class="des-items-content" id="des-phonetic"></p>
+        </div>
+        <div class="des-items" id="des-pronounciation-container">
+          <h2 class="des-items-title" id="des-pronounciation-head">
+            Pronounciation
+          </h2>
+          <p id="des-pro">
+            <audio
+              src=""
+              class="des-items-content"
+              id="des-pronounciation"
+              controls
+            ></audio>
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- main content ends here -->
+    <!-- --------------------------------------------------------- -->
+    <!-- footer starts here -->
+    <!-- <footer>coders</footer> -->
+    <!-- footer ends here -->
+    <!-- ------------------------------------------------------- -->
+  </body>
+</html>
